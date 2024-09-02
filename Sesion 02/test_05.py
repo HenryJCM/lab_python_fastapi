@@ -1,22 +1,10 @@
-class Carro:
-    """Esta clase esta definiendo el estado y el comportamiento de un carro"""
-    ruedas = 4
+"""Conversión de datos"""
 
-    def __init__(self, color, aceleracion):
-        self.color = color
-        self.aceleracion = aceleracion
-        self.velocidad = 0
+"""De string: str a enteros: int"""
 
-    def acelerar(self):
-        self.aceleracion = self.velocidad + self.aceleracion
+var1 = "Hello world"
+var2 = 2024
 
-    def frenar(self):
-        velocidad = self.velocidad - self.aceleracion
-        if velocidad < 0:
-            velocidad = 0
-
-        self.velocidad = velocidad
-
-carro1 = Carro('azul', 40)
-
-print("El color de mi primer carro es: {}".format(carro1.color))
+"""Para realizar esta suma tenemos que hacer la conversión de la variable tipo int a tipo str usando str() """
+"""Del siguiente modo: """
+print(var1 + " " + str(var2))

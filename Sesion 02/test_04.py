@@ -1,17 +1,12 @@
-"""Funciones"""
+"""Tipos de datos complementarios"""
 
-var_1 = 60
-var_2 = 40
+"""Tipos de datos Lista: []"""
 
-def sumar(a, b):
-    return a + b
+var1 = [20, "Mauro", "Calle las Almendras", 1994]
 
-resultado = sumar(var_1, var_2)
+print("El valor de mi var1 es: {}".format(var1))
 
-print("El resultado es: {}".format(resultado))
+"""Valores por índice de la lista"""
 
-def sumarDefault(number1, number2 = 20):
-    return number1 + number2
-
-print(sumarDefault(10, 15))
-print(sumarDefault(10))
+print("Valor del índice 0 de mi lista: {}".format(var1[0]))
+print("Valor del índice 2 de mi lista: {}".format(var1[2]))
