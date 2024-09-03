@@ -1,1 +1,4 @@
 .idea
+*.xml
+*.pdf
+__pycache__
