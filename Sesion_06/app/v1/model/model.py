@@ -10,6 +10,8 @@ class User(Base):
     first_name = Column(String, nullable=False)
     last_name = Column(String, nullable=False)
     city = Column(String, nullable=True)
+    username = Column(String, unique=True)
+    hashed_password = Column(String)
 
 SQLALCHEMY_DATABASE_URL = 'postgresql://postgres:admin@localhost:5433/inka_company'
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
